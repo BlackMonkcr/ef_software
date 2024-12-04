@@ -1,0 +1,15 @@
+[run]
+source = .
+omit = 
+    */tests/*
+    */test_*.py
+    */venv/*
+    setup.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if __name__ == .__main__.:
+    pass
+    raise NotImplementedError
